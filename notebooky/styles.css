@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    margin-top: 100px;
+    background-color: rgb(182, 182, 182);
+    padding: 0;
+}
+
+nav {
+    background-color: lightgray;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    padding: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+
+}
+
+nav > div {
+    position:absolute;
+    right: 50px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+
+nav > div > a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 7px;
+    margin: 3px;
+    transition: 250ms;
+}
+
+.posty {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1040px;
+    margin: auto;
+    background-color: rgb(235, 235, 235);
+}
+
+.posty > div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(196, 196, 196);
+    min-height: 300px;
+    background-color: white
+}
+
+.posty > div > img {
+    width: 50%;
+    margin: auto;
+}
+
+.posty > div > div {
+    width: 50%;
+}
+
+.posty > .obraceni {
+    flex-direction: row-reverse;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 60px;
+    padding-top: 20px;
+}
+
+nav > div > a:hover {
+    background-color: black;
+    color:  white;
+    transform: scale(1.15);
+    transition: 0ms;
+}
+
+
+@media screen and (max-width:1060px) {
+    .posty {
+        width: 100%;
+    }
+    .posty > div {
+        width: 100%;
+    }
+    nav > div {
+        right: 25px;
+    width: 61%;
+    }
+
+}
+
+
+@media screen and (max-width:620px) {
+
+    .posty > div > img {
+        width: 100%;
+    }
+    
+    .posty > div > div {
+        width: 100%;
+    }
+
+    nav > div {
+        right: 5px;
+    width: 55%;
+    }
+
+    footer {
+        
+    height: 120px;
+    padding-top: 40px;
+    }
+}
