@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family:sans-serif;
 }
 
 body {
@@ -22,14 +23,12 @@ nav {
 nav {
     display: flex;
     align-items: center;
-    border: 1px solid black;
 
 }
 
 nav > div {
     position:absolute;
     right: 50px;
-    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -41,16 +40,24 @@ nav > div > a {
     color: black;
     background-color: white;
     padding: 7px;
-    margin: 3px;
-    transition: 250ms;
+    margin: 5px;
+    transition: 450ms;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+.strana {
+    width: 1040px;
+    min-height: 500px;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(235, 235, 235);
+
 }
 
 .posty {
     display: flex;
     flex-wrap: wrap;
-    width: 1040px;
-    margin: auto;
-    background-color: rgb(235, 235, 235);
 }
 
 .posty > div {
@@ -66,8 +73,9 @@ nav > div > a {
 }
 
 .posty > div > img {
-    width: 50%;
+    width: 40%;
     margin: auto;
+    border-radius: 10px;
 }
 
 .posty > div > div {
@@ -77,6 +85,18 @@ nav > div > a {
 .posty > .obraceni {
     flex-direction: row-reverse;
 }
+
+.articles > p, h2, h3 {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.paragraf {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;}
+
 
 footer {
     background-color: black;
@@ -93,12 +113,14 @@ nav > div > a:hover {
     background-color: black;
     color:  white;
     transform: scale(1.15);
-    transition: 0ms;
+    transition: 75ms;
+    border: solid white 1px;
+    border-radius: 5px;
 }
 
 
 @media screen and (max-width:1060px) {
-    .posty {
+    .strana {
         width: 100%;
     }
     .posty > div {
